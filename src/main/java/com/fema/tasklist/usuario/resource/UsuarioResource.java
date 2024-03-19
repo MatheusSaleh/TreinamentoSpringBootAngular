@@ -22,7 +22,7 @@ public class UsuarioResource {
     }
 
     @GetMapping("/{idUsuario}")
-    public ResponseEntity<UsuarioDTO> listarUsuario(Long idUsuario){
+    public ResponseEntity<UsuarioDTO> listarUsuario(@PathVariable Long idUsuario){
         return this.usuarioService.listarUsuario(idUsuario);
     }
 
